@@ -1,0 +1,22 @@
+{
+  "name": "safestreet-ai-backend",
+  "private": true,
+  "version": "2.0.0",
+  "type": "module",
+  "description": "Express backend for SafeStreet AI. Forwards uploads to the Flask AI service for real inference, then applies threat-scoring business logic before responding to the frontend.",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js"
+  },
+  "dependencies": {
+    "axios": "^1.7.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "form-data": "^4.0.0",
+    "fs-extra": "^11.4.0",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^9.0.3"
+  }
+}

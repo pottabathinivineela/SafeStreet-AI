@@ -1,0 +1,23 @@
+# Core web framework
+flask==3.0.3
+flask-cors==4.0.1
+python-dotenv==1.0.1
+
+# Computer vision — Ultralytics YOLOv8 (no Roboflow, no TensorFlow)
+ultralytics==8.2.103
+opencv-python-headless==4.10.0.84
+numpy==1.26.4
+
+# Speech-to-text — faster-whisper (CTranslate2-based, light on CPU)
+faster-whisper==1.0.3
+
+# NOTE for low-end CPUs (e.g. Intel Celeron N3350):
+# `ultralytics` pulls in PyTorch as a dependency. The default `pip install`
+# may grab a large CUDA build even though you have no GPU. Install the
+# CPU-only build FIRST to save disk space and install time:
+#
+#   pip install torch --index-url https://download.pytorch.org/whl/cpu
+#
+# Then run:
+#
+#   pip install -r requirements.txt
