@@ -55,6 +55,7 @@ export async function sendEmergencyEmail(alert: EmergencyAlert): Promise<EmailRe
     time: new Date(alert.timestamp).toLocaleString(),
     latitude: alert.latitude,
     longitude: alert.longitude,
+    maps_url: `https://www.google.com/maps?q=${alert.latitude},${alert.longitude}`,
     suggested_action: alert.suggestedAction,
     risk_level: alert.riskLevel.toUpperCase(),
   };
