@@ -4,3 +4,13 @@ backend/.env
 backend/node_modules/
 uploads/
 dist/
+
+# SafeStreet AI Python backend
+safestreet_api/.env
+safestreet_api/venv/
+safestreet_api/__pycache__/
+safestreet_api/**/*.py[cod]
+safestreet_api/.pytest_cache/
+
+# TypeScript build artifacts
+*.tsbuildinfo
